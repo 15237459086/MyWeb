@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<DatasourceManager xmlVersion="20170720" releaseVersion="9.0.0">
+<ConnectionMap>
+<Connection name="findreportjson" class="com.fr.plugin.db.json.core.JSONConnection" pluginID="com.fr.plugin.db.json">
+<DatabaseAttr originalCharsetName="UTF-8" newCharsetName="UTF-8"/>
+<Attr host="http://localhost:8080/MyWeb/jsonServlet" username="" type="1"/>
+<Parameters>
+<Parameter>
+<Attributes name="name"/>
+<O t="Formula" class="Formula">
+<Attributes>
+<![CDATA[=formletName]]></Attributes>
+</O>
+</Parameter>
+<Parameter>
+<Attributes name="address"/>
+<O>
+<![CDATA[\"123121\"]]></O>
+</Parameter>
+</Parameters>
+</Connection>
+</ConnectionMap>
+<TableDataMap>
+<TableData name="JSON数据集7" class="com.fr.plugin.db.json.core.JSONTableData" pluginID="com.fr.plugin.db.json">
+<Parameters/>
+<Connection class="com.fr.data.impl.NameDatabaseConnection">
+<DatabaseName>
+<![CDATA[findreportjson]]></DatabaseName>
+</Connection>
+<ConfigAttr class="com.fr.plugin.db.json.core.ConfigAttr" pluginID="com.fr.plugin.db.json">
+<Attr sorted="false" prepare="false"/>
+</ConfigAttr>
+<QueryText>
+<![CDATA[$.user.animals]]></QueryText>
+</TableData>
+<TableData name="JSON数据集8" class="com.fr.plugin.db.json.core.JSONTableData" pluginID="com.fr.plugin.db.json">
+<Parameters/>
+<Connection class="com.fr.data.impl.NameDatabaseConnection">
+<DatabaseName>
+<![CDATA[findreportjson]]></DatabaseName>
+</Connection>
+<ConfigAttr class="com.fr.plugin.db.json.core.ConfigAttr" pluginID="com.fr.plugin.db.json">
+<Attr sorted="false" prepare="false"/>
+</ConfigAttr>
+<QueryText>
+<![CDATA[$.user.books]]></QueryText>
+</TableData>
+</TableDataMap>
+</DatasourceManager>

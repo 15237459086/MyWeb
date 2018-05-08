@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" 
+	xmlns="http://java.sun.com/xml/ns/javaee" 
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee 
+	http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+  <display-name></display-name>
+  
+   <servlet-mapping>
+      <servlet-name>default</servlet-name>
+      <url-pattern>*.js</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>WeChatServlet</servlet-name>
+    <servlet-class>com.lyh.servlet.WeChatServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>CaptchaServlet</servlet-name>
+    <servlet-class>com.lyh.servlet.CaptchaServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>ImageWaterMarkServlet</servlet-name>
+    <servlet-class>com.lyh.servlet.ImageWaterMarkServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PDFServlet</servlet-name>
+    <servlet-class>com.lyh.servlet.PDFServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>DicomServlet</servlet-name>
+    <servlet-class>com.lyh.servlet.DicomServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Select2Servlet</servlet-name>
+    <servlet-class>com.lyh.servlet.Select2Servlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>Select2AjaxServlet</servlet-name>
+    <servlet-class>com.lyh.servlet.Select2AjaxServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>PDFJasperReport</servlet-name>
+    <servlet-class>com.lyh.servlet.PDFJasperReport</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>FindReportServlet</servlet-name>
+    <servlet-class>com.lyh.servlet.FindReportServlet</servlet-class>
+  </servlet>
+  <servlet>
+    <description>This is the description of my J2EE component</description>
+    <display-name>This is the display name of my J2EE component</display-name>
+    <servlet-name>JsonServlet</servlet-name>
+    <servlet-class>com.lyh.servlet.JsonServlet</servlet-class>
+  </servlet>
+<servlet>
+    <servlet-name>ReportServer</servlet-name>
+    <servlet-class>com.fr.web.ReportServlet</servlet-class>
+    <load-on-startup>0</load-on-startup>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>ReportServer</servlet-name>
+    <url-pattern>/ReportServer</url-pattern>
+  </servlet-mapping>
+
+
+
+
+
+
+
+
+
+  <servlet-mapping>
+    <servlet-name>WeChatServlet</servlet-name>
+    <url-pattern>/weChatServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>CaptchaServlet</servlet-name>
+    <url-pattern>/captchaServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>ImageWaterMarkServlet</servlet-name>
+    <url-pattern>/mageWaterMarkServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PDFServlet</servlet-name>
+    <url-pattern>/pdfServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>DicomServlet</servlet-name>
+    <url-pattern>/dicomServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Select2Servlet</servlet-name>
+    <url-pattern>/select2Servlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>Select2AjaxServlet</servlet-name>
+    <url-pattern>/select2AjaxServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>PDFJasperReport</servlet-name>
+    <url-pattern>/pdfJasperReport</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>FindReportServlet</servlet-name>
+    <url-pattern>/findReportServlet</url-pattern>
+  </servlet-mapping>
+  <servlet-mapping>
+    <servlet-name>JsonServlet</servlet-name>
+    <url-pattern>/jsonServlet</url-pattern>
+  </servlet-mapping>	
+  
+  <welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+  </welcome-file-list>
+</web-app>
