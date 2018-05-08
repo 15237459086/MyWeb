@@ -20,6 +20,7 @@ public class Page {
 
 	public Integer getCurrentStartNum() {
 		currentStartNum = (currentPage.intValue()-1)*pageSize.intValue();
+		System.out.print(123);
 		return currentStartNum;
 	}
 
